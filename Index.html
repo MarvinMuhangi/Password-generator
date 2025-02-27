@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-page">
+      
+        <div class="form">
+            <div class="title">
+                <h1>Generate Password</h1>
+            </div>
+            <form>
+                <!-- Password display start -->
+                <div class="pass-display">
+
+                    <span class="pass-title">Password</span>
+
+                    <div class="display-field">
+                <input type="text" class="text-field">
+
+                <!-- Copy Button -->
+                <button type="button" class="copy-btn">Copy</button>
+            </div>
+
+            </div>
+            <!-- Password display end -->
+
+
+
+            <!-- Password Length Start -->
+
+            <div class="pass-length">
+            <span class="pass-title">Password Length</span>
+                <div class="slider">
+                    <input type="range" min="5" max="20" value="20"  class="length-slider">
+                    <label class="length-num">5</label>
+                </div>
+            </div>
+
+            <!-- Password Length end -->
+
+
+            <div class="middle-part">
+            <div class="settings-title"> Settings</div>
+            <div class="settings">
+                <div class="lower-case">            
+                <input type="checkbox" id="lower" name= "checkbox" placeholder="a-z" class="grid-item" >
+                <span>a-z</span>
+            </div> 
+
+            <div class="Upper-case"> 
+                
+                <input type="checkbox" id="Upper" name= "checkbox" placeholder="A-Z"  class="grid-item">
+                <span>A-Z</span>
+            </div> 
+
+            <div class="num">
+              
+                <input type="checkbox" id="Numbers"  name= "checkbox" placeholder="0-9" class="grid-item">
+                <span>0-9</span>
+            </div>
+
+            <div class="char">
+                <input type="checkbox" id="Characters" name= "checkbox" placeholder="*^%$#@" class="grid-item">
+                <span>*^%$#</span>
+            </div>
+            </div>
+
+            <div class="generator">
+            <button type="button" class="btn">Generate Password</button>
+            </div>
+        </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
